@@ -1,0 +1,82 @@
+/* Freight Big Pro */
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('https://use.typekit.net/af/a91824/000000000000000077359f9d/30/l?subset_id=2&fvd=n4&v=3') format('woff2'),
+         url('https://use.typekit.net/af/a91824/000000000000000077359f9d/30/d?subset_id=2&fvd=n4&v=3') format('woff'),
+         url('https://use.typekit.net/af/a91824/000000000000000077359f9d/30/a?subset_id=2&fvd=n4&v=3') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('https://use.typekit.net/af/650441/000000000000000077359f96/30/l?subset_id=2&fvd=n7&v=3') format('woff2'),
+         url('https://use.typekit.net/af/650441/000000000000000077359f96/30/d?subset_id=2&fvd=n7&v=3') format('woff'),
+         url('https://use.typekit.net/af/650441/000000000000000077359f96/30/a?subset_id=2&fvd=n7&v=3') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('https://use.typekit.net/af/5d264d/000000000000000077359fa0/30/l?subset_id=2&fvd=i4&v=3') format('woff2'),
+         url('https://use.typekit.net/af/5d264d/000000000000000077359fa0/30/d?subset_id=2&fvd=i4&v=3') format('woff'),
+         url('https://use.typekit.net/af/5d264d/000000000000000077359fa0/30/a?subset_id=2&fvd=i4&v=3') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('https://use.typekit.net/af/e5e434/000000000000000077359f99/30/l?subset_id=2&fvd=i7&v=3') format('woff2'),
+         url('https://use.typekit.net/af/e5e434/000000000000000077359f99/30/d?subset_id=2&fvd=i7&v=3') format('woff'),
+         url('https://use.typekit.net/af/e5e434/000000000000000077359f99/30/a?subset_id=2&fvd=i7&v=3') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Freight Sans Pro */
+@font-face {
+    font-family: 'Freight Sans Pro';
+    src: url('https://use.typekit.net/af/a52caf/00000000000000007735d680/30/l?subset_id=2&fvd=n3&v=3') format('woff2'),
+         url('https://use.typekit.net/af/a52caf/00000000000000007735d680/30/d?subset_id=2&fvd=n3&v=3') format('woff'),
+         url('https://use.typekit.net/af/a52caf/00000000000000007735d680/30/a?subset_id=2&fvd=n3&v=3') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freight Sans Pro';
+    src: url('https://use.typekit.net/af/88700a/00000000000000007735d65d/30/l?subset_id=2&fvd=n4&v=3') format('woff2'),
+         url('https://use.typekit.net/af/88700a/00000000000000007735d65d/30/d?subset_id=2&fvd=n4&v=3') format('woff'),
+         url('https://use.typekit.net/af/88700a/00000000000000007735d65d/30/a?subset_id=2&fvd=n4&v=3') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Museo Slab */
+@font-face {
+    font-family: 'Museo Slab';
+    src: url('https://use.typekit.net/af/0681f2/00000000000000007735d9a9/30/l?subset_id=2&fvd=n1&v=3') format('woff2'),
+         url('https://use.typekit.net/af/0681f2/00000000000000007735d9a9/30/d?subset_id=2&fvd=n1&v=3') format('woff'),
+         url('https://use.typekit.net/af/0681f2/00000000000000007735d9a9/30/a?subset_id=2&fvd=n1&v=3') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Museo Slab';
+    src: url('https://use.typekit.net/af/a50f93/00000000000000007735d9d1/30/l?subset_id=2&fvd=n7&v=3') format('woff2'),
+         url('https://use.typekit.net/af/a50f93/00000000000000007735d9d1/30/d?subset_id=2&fvd=n7&v=3') format('woff'),
+         url('https://use.typekit.net/af/a50f93/00000000000000007735d9d1/30/a?subset_id=2&fvd=n7&v=3') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
