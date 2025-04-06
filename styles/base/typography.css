@@ -1,0 +1,40 @@
+body {
+    font-family: 'Freight Sans Pro', 'Arial', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    /* font-family: 'Museo Slab', 'Arial', sans-serif; */
+    font-family: "Noto Sans", 'Arial', sans-serif;
+    font-optical-sizing: auto;
+}
+
+body p, body a, body li {
+    font-family: 'Freight Sans Pro';
+}
+
+.site-header .main-menu .main-menu__nav-link {
+    font-family: 'Freight Sans Pro';
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+}
+
+.section .titles-container h2, .section .titles-container h3 {
+    text-transform: uppercase;
+}
+
+/* Utilities */
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-nospace {
+    white-space: nowrap;
+}

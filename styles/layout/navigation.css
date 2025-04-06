@@ -11,6 +11,7 @@
     left: 0;
     right: 0;
     background-color: white;
+    z-index: 4;
 }
 
 .site-header__content {
@@ -39,18 +40,17 @@
 
 .main-menu__nav-link {
     position: relative;
-    padding: 0 20px 0 0;
+    padding: 0.5rem 1rem;
     color: #333;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease;
-    padding: 0.5rem 1rem;
-    transition: .25s;
 }
 
 .main-menu__nav-link:after {
     display: block;
     content: "";
+    margin-top: 6px;
     width: 0;
     height: 2px;
     background-color: #333;
