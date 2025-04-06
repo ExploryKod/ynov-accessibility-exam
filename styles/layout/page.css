@@ -44,3 +44,16 @@ body .covivio-section .paragraph-container p {
     line-height: 1.9em;
     text-transform: none;
 }
+
+body .covivio-section .paragraph-container p a {
+    color: #000;
+    padding-bottom: .05em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, .3);
+    transition: 0.1s background-color linear, 0.1s color linear;
+}
+
+body .covivio-section .paragraph-container p a:hover {
+    background-color: white;
+}
