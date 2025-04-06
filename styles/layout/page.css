@@ -29,3 +29,18 @@ body .covivio-section .logo-container {
     justify-content: center;
     align-items: center;
 }
+
+body .covivio-section .paragraph-container {
+    margin: 0 auto;
+    max-width: 1172px;
+}
+
+body .covivio-section .paragraph-container p {
+    margin-bottom: 17px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16.5px;
+    letter-spacing: .02em;
+    line-height: 1.9em;
+    text-transform: none;
+}
