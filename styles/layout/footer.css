@@ -1,0 +1,24 @@
+.footer .footer-container {
+    margin: 0 auto;
+    padding-bottom: 121px;
+    max-width: var(--site-max-w);
+    background-color: var(--cite-yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer-container .footer-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer-container .footer-menu .footer-menu__list {
+    padding: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+

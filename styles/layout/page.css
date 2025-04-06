@@ -1,0 +1,31 @@
+body .section {
+    max-width: var(--site-max-w);
+    padding: 0;
+    margin: 0 auto;
+}
+
+body .section--grey {
+    background-color: var(--cite-grey);
+}
+
+body .section--yellow {
+    background-color: var(--cite-yellow);
+}
+
+body .coworking-section {
+    display: none;
+}
+
+/* Covivio and form section specific style */
+body .covivio-section .section-content, body .contact-section .section-content {
+    padding: 100px 121px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+body .covivio-section .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

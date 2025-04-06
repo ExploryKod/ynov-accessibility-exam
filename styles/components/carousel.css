@@ -1,0 +1,9 @@
+/* Fancybox Carousel */
+
+#covivio-carousel {
+    --f-carousel-slide-height: 60%;
+    --f-carousel-spacing: 10px;
+  
+    height: 200px;
+}
+  
