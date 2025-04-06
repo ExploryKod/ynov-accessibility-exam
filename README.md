@@ -1,6 +1,7 @@
 # Rendu pour le cours accessibilité
 
-Consigne : copier la page d'accueil de <a href="https://www.citenumerique.fr/">ce site</a> et la rendre plus conforme aux règle d'accéssibilité web.
+**Consigne :**
+> copier la page d'accueil de <a href="https://www.citenumerique.fr/">ce site</a> et la rendre plus conforme aux règles d'accèssibilité web.
 
 # Installation 
 
