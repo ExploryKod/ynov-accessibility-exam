@@ -1,0 +1,14 @@
+.text-image {
+    display: flex;
+    gap: 34px;
+    padding: 70px 121px;
+}
+
+@media  screen and (max-width: 625px) {
+    .text-image {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

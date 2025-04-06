@@ -6,15 +6,31 @@
 }
 
 .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+.site-header__content {
+    width: 100%;
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: var(--site-max-w);
     padding: 98px;
-    position: relative;
+    display: flex;
     justify-content: space-between;
 }
 
 .site-header .logo__img {
     max-width: 198px;
+}
+
+.main-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .main-menu__nav {
@@ -52,7 +68,6 @@
 }
 
 .logo {
-    position: fixed;
     z-index: 999;
     left: 20px;
     top: 20px;
@@ -68,7 +83,7 @@
     z-index: 1000;
     cursor: pointer;
     padding: 10px;
-    background-color: var(--cite-yellow);
+    background-color: transparent;
     border-radius: 4px;
 }
 
@@ -97,19 +112,17 @@
     top: 8px;
 }
 
-/* Menu principal */
-.main-menu {
-    position: fixed;
-    left: -100vw; 
-    top: 98px;
-    width: 100vw; 
-    height: calc(100vh - 196px);
-    background-color: white;
-    transition: transform 0.3s ease-in-out;
-    z-index: 900;
+#menu__toggle {
+   display: none;
 }
 
-@media screen and (max-width: 768px) {
+
+/* Adaptation layout de la page au header */
+main {
+    margin-top: var(--header-height);
+}
+
+@media screen and (max-width: 1000px) {
 
     .site-header {
         height: 120px;
@@ -117,19 +130,40 @@
         padding: 0;
     }
 
+    .site-header__content {
+        padding: 0;
+        height: var(--header-height);
+    }
+
     .site-header .logo__img {
         max-width: 110px;
     }
 
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
     .main-menu {
+        position: fixed;
         top: 120px;
+        left: -100vw; 
+        width: 100vw; 
+        height: calc(100vh - var(--header-height));
+        background-color: white;
+        transition: transform 0.3s ease-in-out;
+        z-index: 900;
+        justify-content: flex-start;
     }
  
     .menu__btn {
+        margin: 10px;
         display: block;
     }
 
     #menu__toggle {
+        display: block;
         visibility: hidden;
     }
 

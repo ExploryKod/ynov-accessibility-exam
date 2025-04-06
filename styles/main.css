@@ -1,4 +1,17 @@
-@import './variables.css';
-@import './navigation.css';
+/* Abstract styles */
+@import './abstract/reset.css';
+@import './abstract/variables.css';
+@import './fonts/font.css';
 
+/* Base styles */
+@import './base/typography.css';
+
+/* Layout styles */
+@import './layout/navigation.css';
+@import './layout/page.css';
+@import './layout/footer.css';
+
+/* Components */
+@import './components/carousel.css';
+@import './components/text-image.css';
 

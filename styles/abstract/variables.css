@@ -1,0 +1,16 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --cite-black: #333;
+    --cite-yellow: #f8ef3c;
+    --cite-grey: #F2F2F2;
+    /* measurements */
+    --header-height: 315px;
+    --site-max-w: 1600px;
+}
+
+@media  screen and (max-width: 1000px) {
+    :root {
+        --header-height: 120px;
+    }
+}
