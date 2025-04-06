@@ -1,0 +1,134 @@
+
+.contact-section .text-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-section .text-container h2 {
+    font-size: 35px;
+    letter-spacing: .02em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+}
+
+.contact-section .text-container p {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    font-family: system-ui, sans-serif;
+    color: #222;
+  }
+  
+  .contact-form .field {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="tel"],
+  .contact-form textarea {
+    margin-bottom: 8px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #0077cc;
+    box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.2);
+    outline: none;
+  }
+  
+  .contact-form .required {
+    color: #d60000;
+    margin-left: 0.25rem;
+  }
+  
+  .contact-form .checkbox {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  
+  .contact-form .checkbox input[type="checkbox"] {
+    margin-right: 0.75rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    accent-color: #0077cc;
+  }
+
+  .contact-form .checkbox label {
+    margin-top: 2px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .privacy-notice {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .privacy-notice a {
+    color: #d60000;
+  }
+
+  .contact-form .form-button-wrapper {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-form .form-button-wrapper button {
+    padding: 1em 2.5em;
+    width: auto;
+    height: auto;
+    font-family: 'Freight Sans Pro';
+    transition: 0.1s background-color linear, 0.1s color linear;
+    background-color: transparent;
+    color: #272727;
+    border: 2px solid #272727;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .contact-form .form-button-wrapper button:hover, .contact-form .form-button-wrapper button:focus {
+    background-color: #272727;
+    color: #fff;
+  }
