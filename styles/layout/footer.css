@@ -19,6 +19,10 @@
 .footer .footer-container .footer-menu .footer-menu__list {
     padding: 20px 0;
     display: flex;
-    gap: 10px;
+    gap: 30px;
+}
+
+.footer .footer-container .footer-menu .nav-link {
+    padding: 0;
 }
 
