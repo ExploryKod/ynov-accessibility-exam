@@ -49,6 +49,10 @@ table {
 
 /* Custom reset styles (Outside Eric Meyer styles) */
 
+ol.noreset, ul.noreset {
+   list-style: disc inside;
+}
+
 a {
 	text-decoration: none;
 }

@@ -26,6 +26,45 @@ body p, body a, body li {
     text-transform: uppercase;
 }
 
+/* Generic class for title */
+
+.title-xl {
+    font-family: 'Noto Sans', 'Arial', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 35px;
+    letter-spacing: .02em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.title-lg {
+    margin-top : 15px;
+    margin-bottom: 15px;
+    font-family: 'Freight Sans Pro';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: .25em;
+    line-height: 2em;
+    text-transform: uppercase;
+}
+
+/* Generic class for texts */
+
+.text-lg {
+    font-family: 'Freight Sans Pro';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16.5px;
+    letter-spacing: .02em;
+    line-height: 1.9em;
+    text-transform: none;
+    color: #000;
+    word-wrap: break-word;
+}
+
 /* Utilities */
 .text-uppercase {
     text-transform: uppercase;
