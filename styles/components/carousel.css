@@ -5,5 +5,12 @@
     --f-carousel-spacing: 10px;
   
     height: 200px;
+    max-width: 640px;
+    margin: 0 auto;
 }
-  
+
+#covivio-Carousel .f-carousel__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
