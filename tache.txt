@@ -1,0 +1,4 @@
+- Hamburger menu inaccessible 
+- Problème des aria manquants
+- Carrousel
+- tailles des textes ?

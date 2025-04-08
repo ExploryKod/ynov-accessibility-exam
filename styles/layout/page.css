@@ -16,6 +16,10 @@ body .coworking-section {
     display: none;
 }
 
+body .bg-grey-90 {
+    background-color: var(--cite-grey-90);
+}
+
 /* Covivio and form section specific style */
 body .covivio-section .section-content, body .contact-section .section-content {
     padding: 100px 121px;
@@ -45,15 +49,15 @@ body .covivio-section .paragraph-container p {
     text-transform: none;
 }
 
-body .covivio-section .paragraph-container p a {
+body .paragraph-container p a.cite-link-underline {
     color: #000;
     padding-bottom: .05em;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: rgba(0, 0, 0, .3);
+    border-bottom-color: rgba(0, 0, 0, .5);
     transition: 0.1s background-color linear, 0.1s color linear;
 }
 
-body .covivio-section .paragraph-container p a:hover {
+body .covivio-section .paragraph-container a:hover {
     background-color: white;
 }

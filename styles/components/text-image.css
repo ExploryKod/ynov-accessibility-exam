@@ -2,13 +2,276 @@
     display: flex;
     gap: 34px;
     padding: 70px 121px;
+    position: relative;
 }
 
-@media  screen and (max-width: 625px) {
-    .text-image {
-        padding: 0;
+.text-image.inverse {
+    flex-direction: row-reverse;
+}
+
+.text-image > div {
+    flex-basis: 50%;
+}
+
+/* === Avec chevauchement == */
+.text-image.overflow-effect {
+    margin: 70px 121px;
+    padding: 0;
+    gap: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-image.overflow-effect > div:nth-of-type(1) {
+   flex-basis: 75%;
+   margin-right: -30%;
+}
+
+.text-image.overflow-effect > div:nth-of-type(2) {
+    max-width: 733px;
+    flex-basis: 50%;
+ }
+
+.text-image.overflow-effect .text-container .text-container__inner-box {
+    padding: 10%;
+}
+
+.text-image .image-container {
+    overflow: hidden;
+}
+
+.text-image .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-image .text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-image .text-container .paragraph-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.text-image .text-container .link-container {
+    margin-top: 40px;
+    display: block;
+}
+
+.text-image .text-container .link-container a {
+    margin-top: 10px;
+}
+
+.text-image .sub-description {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-image .sub-description.columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 3rem;
+    row-gap: 1rem;
+    margin-top: 2rem;
+}
+
+.text-image .sub-description.columns > div:last-child {
+    grid-row: 2;
+    grid-column: 1 / span 2
+}
+
+.text-image .noreset {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.text-image .noreset li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.9em;
+    font-family: 'Freight Sans Pro', sans-serif;
+    font-size: 16.5px;
+    letter-spacing: .02em;
+}
+
+.text-image .noreset li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: currentColor; /* Uses text color for better contrast adaptation */
+}
+
+/* Address styling */
+.text-image address {
+    font-style: normal;
+    font-family: 'Freight Sans Pro', sans-serif;
+    font-size: 16.5px;
+    letter-spacing: .02em;
+    line-height: 1.9em;
+    margin-top: 0.5rem;
+}
+
+.text-image .address-link {
+    padding-left: 1.5rem;
+    
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.text-image .address-link  span {
+    margin-top: 2px;
+}
+
+.text-image .address-link  span svg {
+    color: #333;
+    width: 15px;
+    height: 15px;
+}
+
+.text-image .address-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'%3E%3Cpath d='M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* Focus styles */
+.text-image a:focus,
+.text-image button:focus {
+    outline: 3px solid #ffbf47;
+    outline-offset: 2px;
+}
+
+/* keyboard navigation */
+.text-image a:focus-visible,
+.text-image button:focus-visible {
+    outline: 3px solid #ffbf47;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.text-image .address-link:hover,
+.text-image .address-link:focus {
+    text-decoration: underline;
+}
+
+.text-image abbr {
+    text-decoration: none;
+    border-bottom: 1px dotted currentColor;
+}
+
+.text-image abbr:hover {
+    cursor: help;
+}
+
+/* Screen reader specific style */
+.text-image .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .text-image, .text-image.inverse {
+        padding: 2rem 1rem;
         display: flex;
         flex-direction: column;
+        gap: 20px;
     }
     
+    .text-image > div {
+        flex-basis: 100%;
+    }
+    
+    .text-image .sub-description {
+        grid-template-columns: 1fr;
+    }
+
+
+    .text-image.overflow-effect > div:nth-of-type(1) {
+        flex-basis: 75%;
+        margin-right: 0;
+    }
+    
+    .text-image.overflow-effect > div:nth-of-type(2) {
+        max-width: 100%;
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+    .text-image {
+        padding: 50px 60px;
+        gap: 25px;
+    }
+    
+    .text-image .sub-description {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .text-image.overflow-effect > div:nth-of-type(2) {
+        max-width: 300px;
+    }
+}
+
+/* Si paramétrage pour les couleurs */
+@media (forced-colors: active) {
+    .text-image .noreset li::before {
+        forced-color-adjust: none;
+    }
+    
+    .text-image .address-link::before {
+        forced-color-adjust: none;
+    }
+    
+    .text-image a:focus,
+    .text-image button:focus,
+    .text-image a:focus-visible,
+    .text-image button:focus-visible {
+        outline: 3px solid ButtonText;
+        outline-offset: 2px;
+    }
+}
+
+/* Au cas où quelqu'un veut imprimer la page : */
+@media print {
+    .text-image {
+        display: block;
+        padding: 0;
+    }
+    
+    .text-image > div {
+        flex-basis: 100%;
+        margin-bottom: 1.5rem;
+    }
+    
+    .text-image .address-link::before {
+        content: "📍 ";
+        position: static;
+        transform: none;
+        background: none;
+        width: auto;
+        height: auto;
+    }
 }

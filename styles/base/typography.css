@@ -12,14 +12,13 @@ body p, body a, body li {
     font-family: 'Freight Sans Pro';
 }
 
-.site-header .main-menu .main-menu__nav-link {
+.site-header .main-menu .nav-link {
     font-family: 'Freight Sans Pro';
     text-transform: uppercase;
     font-weight: 500;
     font-style: normal;
     font-size: 13px;
     letter-spacing: .25em;
-    text-transform: uppercase;
 }
 
 .section .titles-container h2, .section .titles-container h3 {
@@ -77,3 +76,39 @@ body p, body a, body li {
 .text-nospace {
     white-space: nowrap;
 }
+
+.text-bold {
+    font-weight: 600;
+}
+
+.text-semibold {
+    font-weight: 500;
+}
+
+.visually-hidden {
+    visibility: hidden;
+}
+
+.cite-link {
+    font-family: 'Freight Sans Pro';
+    padding: 0.5em 2em;
+    transition: 0.1s background-color linear, 0.1s color linear;
+    background-color: var(--cite-yellow);
+    color: #111111;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: .25em;
+    line-height: 1.9em;
+    
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cite-link:hover, .cite-link:focus {
+    background-color: #272727;
+    color: #fff;
+}
+

@@ -15,6 +15,7 @@
 }
 
 .site-header__content {
+    position: relative;
     width: 100%;
     margin: 0 auto;
     max-width: var(--site-max-w);
@@ -36,6 +37,8 @@
 
 .main-menu__nav {
     flex: grow;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .nav-link {
@@ -125,6 +128,7 @@ main {
 @media screen and (max-width: 1000px) {
 
     .site-header {
+        position: fixed;
         height: 120px;
         background-color: var(--cite-yellow);
         padding: 0;

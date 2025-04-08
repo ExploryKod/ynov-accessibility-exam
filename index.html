@@ -50,16 +50,16 @@ du secteur public au privé.">
     <link rel="stylesheet" href="./styles/main.css">
 
     <style type="text/css">
-  
+
            @font-face{font-family:museo-slab;src:url(https://use.typekit.net/af/63a250/00000000000000007735d9d9/30/l?subset_id=2&fvd=i7&v=3)
              format("woff2"),url(https://use.typekit.net/af/63a250/00000000000000007735d9d9/30/d?subset_id=2&fvd=i7&v=3) format("woff"),
-             url(https://use.typekit.net/af/63a250/00000000000000007735d9d9/30/a?subset_id=2&fvd=i7&v=3) 
+             url(https://use.typekit.net/af/63a250/00000000000000007735d9d9/30/a?subset_id=2&fvd=i7&v=3)
              format("opentype");font-weight:700;font-style:italic;font-stretch:normal;font-display:auto;}</style>
-             
 
-    
-    
-    
+
+
+
+
 
 
     <style>
@@ -90,7 +90,7 @@ du secteur public au privé.">
           <span></span>
         </label>
         <div class="logo">
-          <img src="//images.squarespace-cdn.com/content/v1/5de697e05784972daae69413/1576073348122-7STHEGL7OLSEBXX56NXI/Capture+d%E2%80%99e%CC%81cran+2019-12-11+a%CC%80+15.08.57.png?format=1500w" alt="Site logo" 
+          <img src="./ressources/logo.png" alt="Site logo"
           aria-describedby="logo-description" class="logo__img" />
           <div class="visually-hidden" hidden id="logo-description">
             Un arbre et le nom du lieu: Cité numérique
@@ -153,7 +153,7 @@ du secteur public au privé.">
                   Ayant pour ambition d’être un accélérateur d’innovations pour les acteurs du digital et imaginée comme un laboratoire de projets économiques, culturels et éducatifs, elle accueille et répond aux besoins de tous les professionnels de la start-up à la multinationale, du secteur public au secteur privé.
                 </p>
                 <p class="text-lg">
-                  Connectée et ouverte, elle propose une offre de service complète, une grande variété d’espaces de travail et de détente. De plus, un soin particulier a été apporté à la végétalisation offrant ainsi un cadre privilégié aux occupants. 
+                  Connectée et ouverte, elle propose une offre de service complète, une grande variété d’espaces de travail et de détente. De plus, un soin particulier a été apporté à la végétalisation offrant ainsi un cadre privilégié aux occupants.
                 </p>
               </div>
             </div>
@@ -162,7 +162,9 @@ du secteur public au privé.">
         <section class="location-section section">
           <div class="text-image">
             <div class="image-container">
-              <img src="./ressources/jumbotron-numeric-city.webp" alt="Vue de la Cité Numérique située dans la région Nouvelle-Aquitaine" />
+              <div>
+                <img src="./ressources/jumbotron-numeric-city.webp" alt="Vue de la Cité Numérique située dans la région Nouvelle-Aquitaine" />
+              </div>
             </div>
             <div class="text-container">
               <div class="titles-container">
@@ -173,48 +175,63 @@ du secteur public au privé.">
                 <p class="text-lg">
                   La Cité Numérique bénéficie d’une localisation idéale pour se déplacer en France et interagir avec les différents pays d’Europe.
                 </p>
-                <h4 class="title-md">Accès en avion</h4>
-                <p class="text-lg">87 destinations nationales et internationales desservies</p>
-                <h4 class="title-md">Accès en train</h4>
-                <p class="text-lg">18 allers-retours quotidiens Paris–Bordeaux en 2h05</p>
+                <div class="sub-description">
+                  <h4 class="text-lg text-uppercase text-semibold">Accès en avion&nbsp;:</h4>
+                  <p class="text-lg">87 destinations nationales et internationales desservies</p>
+                  <h4 class="text-lg text-uppercase text-semibold">Accès en train&nbsp;:</h4>
+                  <p class="text-lg">18 allers-retours quotidiens Paris–Bordeaux en 2h05</p>
+                </div>
               </div>
             </div>
-          </div>          
+          </div>
         </section>
-        <section class="building-section section">
-          <div class="text-image">
+        <section class="building-section section" aria-labelledby="local-scale-title">
+          <div class="text-image inverse">
             <div class="image-container">
               <img src="./ressources/jumbotron-numeric-city.webp" alt="Vue de la Cité Numérique située dans la région Nouvelle-Aquitaine" />
             </div>
             <div class="text-container">
               <div class="titles-container">
-                <h2 class="title-xl">À l’échelle locale</h2>
-                <h3 class="title-lg">Un ancrage territorial fort</h3>
+                <h2 id="local-scale-title" class="title-xl">À l'échelle locale</h2>
+                <h3 id="territorial-anchor-title" class="title-lg">Un ancrage territorial fort</h3>
               </div>
               <div class="paragraph-container">
                 <p class="text-lg">
-                  Connectée à son environnement et traversée par deux rues intérieures, la Cité Numérique participe à la redynamisation de son quartier. Proche de la gare de Bordeaux Saint-Jean, elle incarne l’attractivité et le dynamisme économique de la métropole bordelaise.
+                  Connectée à son environnement et traversée par deux rues intérieures, la Cité Numérique participe à la redynamisation de son quartier. Proche de la gare de Bordeaux Saint-Jean, elle incarne l'attractivité et le dynamisme économique de la métropole bordelaise.
                 </p>
-        
-                <h4 class="title-md">Accès en transports en commun</h4>
-                <ul class="noreset">
-                  <li>Tram C – Arrêt Terres Neuves et Belle Rose à 4 min à pied</li>
-                  <li>Bus 20 & 86 à 2 min à pied</li>
-                </ul>
-        
-                <h4 class="title-md">Accès par voiture</h4>
-                <ul class="noreset">
-                  <li>À 10 min de la rocade</li>
-                  <li>Parking de 200 places</li>
-                </ul>
-        
-                <h4 class="title-md">Adresse</h4>
-                <address>
-                  2 rue Marc Sangnier, 33130 – Bègles
-                </address>
+                <div class="sub-description columns" role="group" aria-label="Informations d'accès à la Cité Numérique">
+                  <div class="transport">
+                    <h4 id="transport-heading" class="title-md">Accès en transports en commun</h4>
+                    <ul class="noreset" aria-labelledby="transport-heading">
+                      <li>Tram C – Arrêt Terres Neuves et Belle Rose à <abbr title="minutes">4 min</abbr> à pied</li>
+                      <li>Bus 20 & 86 à <abbr title="minutes">2 min</abbr> à pied</li>
+                    </ul>
+                  </div>
+                  <div class="car">
+                    <h4 id="car-heading" class="title-md">Accès par voiture</h4>
+                    <ul class="noreset" aria-labelledby="car-heading">
+                      <li>À <abbr title="minutes">10 min</abbr> de la rocade</li>
+                      <li>Parking de 200 places</li>
+                    </ul>
+                  </div>
+                  <div class="address">
+                    <h4 id="address-heading" class="title-md">Adresse</h4>
+                    <address aria-labelledby="address-heading">
+                      <a href="https://maps.google.com/?q=2+rue+Marc+Sangnier,+33130+Bègles,+France" target="_blank" class="address-link">
+                        <span class="cite-link-underline">2 rue Marc Sangnier, 33130 – Bègles</span>
+                        <span aria-hidden="true">
+                          <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link-icon lucide-external-link">
+                            <path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                        </span>
+                        <span class="visually-hidden">Ouvrir dans Google Map</span>
+                      </a>
+                    </address>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>          
+          </div>
         </section>
 
         <section class="coworking-section section">
@@ -321,7 +338,7 @@ du secteur public au privé.">
                        />
                 </div>
               </div>
-              
+
             </div>
             <div class="text-container">
               <div class="titles-container">
@@ -332,7 +349,7 @@ du secteur public au privé.">
                 <p class="text-lg">
                   Des bureaux privatifs personnalisables et aménagés, des postes en coworking, des espaces event et meeting pour tous formats de réunion, des « services zones » avec café, snacks et wifi très haut débit, des espaces de convivialité pour se détendre et des évènements ponctuels pour fédérer.
                 </p>
-        
+
                 <h4 class="title-md">Mais pas que…</h4>
                 <ul class="noreset">
                   <li>Le service French Tech Central : accès à tous les services de l’administration, sur le modèle du service proposé à la Station F (Paris)</li>
@@ -340,14 +357,14 @@ du secteur public au privé.">
                   <li>Un restaurant</li>
                   <li>Une conciergerie</li>
                 </ul>
-        
+
                 <div class="cta-buttons">
                   <button type="button" class="btn btn-primary">Je recherche des bureaux</button>
                   <button type="button" class="btn btn-primary">Je recherche une salle de réunion</button>
                 </div>
               </div>
             </div>
-          </div>          
+          </div>
         </section>
 
         <section class="creation-section section">
@@ -372,7 +389,7 @@ du secteur public au privé.">
                 </p>
               </div>
             </div>
-          </div>          
+          </div>
         </section>
 
         <section class="key-points-section section section--grey">
@@ -391,30 +408,36 @@ du secteur public au privé.">
                 <li>Une labellisation French Tech qui fait du site la référence du digital en région Nouvelle-Aquitaine.</li>
               </ul>
             </div>
-          </div>          
+          </div>
         </section>
-        
+
         <section class="destination-section section">
-          <div class="text-image">
+          <div class="text-image overflow-effect">
             <div class="image-container">
               <img src="./ressources/jumbotron-numeric-city.webp" alt="Vue de la Cité Numérique située dans la région Nouvelle-Aquitaine" />
             </div>
             <div class="text-container">
+              <div class="text-container__inner-box bg-grey-90">
               <h2 class="title-xl">La Cité Numérique, une destination qui séduit</h2>
-              <p>
+              <div class="paragraph-container">
+              <p class="text-lg">
                 Bordeaux Métropole, Enedis, French Tech, Hello Asso, Onepoint, Maelstrom, Région Nouvelle Aquitaine, Sanofi, ou encore UNITEC ont déjà investi les lieux …
               </p>
-              <p>
+              <p class="text-lg">
                 La Cité Numérique s’adresse aux start-ups, aux incubateurs, aux entreprises référentes du digital… ainsi qu’aux structures publiques.
               </p>
+              </div>
               <div class="link-container">
-                <p>
-                  Vous souhaitez, vous aussi rejoindre la Cité Numérique ?
-                </p>
-                <a href="/#contact">Contactez-nous</a>
+                <div>
+                  <p class="text-lg">
+                    Vous souhaitez, vous aussi rejoindre la Cité Numérique ?
+                  </p>
+                  <a class="cite-link" href="#contact">Contactez-nous</a>
+                </div>
               </div>
             </div>
-          </div>          
+            </div>
+          </div>
         </section>
 
         <section class="contact-section section section--yellow" id="contact">
@@ -429,52 +452,52 @@ du secteur public au privé.">
                   <label for="nom">Nom <span class="required" aria-hidden="true"> (Obligatoire)</span></label>
                   <input type="text" id="nom" name="nom" required autocomplete="name" />
                 </div>
-            
+
                 <div class="field">
                   <label for="societe">Société</label>
                   <input type="text" id="societe" name="societe" autocomplete="organization" />
                 </div>
-            
+
                 <div class="field">
                   <label for="email">Email <span class="required" aria-hidden="true"> (Obligatoire)</span></label>
                   <input type="email" id="email" name="email" required autocomplete="email" />
                 </div>
-            
+
                 <div class="field">
                   <label for="telephone">Téléphone</label>
                   <input type="tel" id="telephone" name="telephone" autocomplete="tel-national" />
                 </div>
-            
+
                 <div class="field">
                   <label for="message">Message <span class="required" aria-hidden="true"> (Obligatoire)</span></label>
                   <textarea id="message" name="message" required></textarea>
                 </div>
-            
+
                 <div class="field checkbox">
                   <input type="checkbox" id="newsletter" name="newsletter" />
                   <label for="newsletter">J’accepte de recevoir la newsletter</label>
                 </div>
-            
+
                 <div class="field privacy-notice">
                   <p>
                     Les données personnelles transmises via le présent formulaire sont collectées par Covivio
-                     afin de répondre à votre demande, et si vous l'acceptez, afin de recevoir nos newsletters. 
-                     Vous disposez d'un droit d'accès, de rectification, de portabilité, d'effacement et de retrait de votre consentement. 
+                     afin de répondre à votre demande, et si vous l'acceptez, afin de recevoir nos newsletters.
+                     Vous disposez d'un droit d'accès, de rectification, de portabilité, d'effacement et de retrait de votre consentement.
                      Plus d'informations dans <a href="/politique-de-confidentialite">notre politique de confidentialité</a>.
                   </p>
-                  <p>Ce traitement a pour but de nous permettre de répondre à votre demande d’information. Après validation du formulaire, 
-                    les données recueillies sont transmises sur une adresse email interne. La personne qui a accès à cette demande 
-                    la redirige alors manuellement vers le service concerné. Nous supprimons les données que vous nous avez 
+                  <p>Ce traitement a pour but de nous permettre de répondre à votre demande d’information. Après validation du formulaire,
+                    les données recueillies sont transmises sur une adresse email interne. La personne qui a accès à cette demande
+                    la redirige alors manuellement vers le service concerné. Nous supprimons les données que vous nous avez
                     transmises 6 mois après la clôture de votre demande.</p>
                 </div>
-            
+
                 <div class="form-button-wrapper">
-                  <button type="submit">Confirmer</button>
+                  <button type="submit">Envoyer un email</button>
                 </div>
               </form>
-             
+
             </div>
-            
+
           </div>
         </section>
 
@@ -484,11 +507,11 @@ du secteur public au privé.">
               <img src="./ressources/logo-digitas-sticky.png" alt="Logo Covivio" />
             </div>
             <div class="paragraph-container">
-              <p class="text-lg">Après des discussions engagées dès 2017, c’est en 2019 que 
-                <a href="https://www.covivio.eu/fr/" target="_blank">Covivio</a> 
+              <p class="text-lg">Après des discussions engagées dès 2017, c’est en 2019 que
+                <a href="https://www.covivio.eu/fr/" target="_blank" class="cite-link-underline">Covivio</a>
                 devient propriétaire de 75% des surfaces du site.</p>
-              <p class="text-lg">Fort de son histoire partenariale, de ses expertises immobilières et de sa culture européenne, 
-                <strong>Covivio</strong> invente l’expérience utilisateur d’aujourd’hui et dessine la ville de demain. 
+              <p class="text-lg">Fort de son histoire partenariale, de ses expertises immobilières et de sa culture européenne,
+                <strong>Covivio</strong> invente l’expérience utilisateur d’aujourd’hui et dessine la ville de demain.
                 Acteur immobilier de préférence à l’échelle européenne, <strong>Covivio</strong>
                 se rapproche des utilisateurs finaux, capte leurs aspirations, conjugue travailler, voyager, habiter, et coinvente des espaces vivants.</p>
               <p class="text-lg">Opérateur européen de référence avec plus de 24,8 Md€ de patrimoine <strong>Covivio</strong>
@@ -497,7 +520,7 @@ du secteur public au privé.">
           </div>
         </section>
 
-                        
+
       </main>
       <footer class="footer">
         <div class="footer-container">
@@ -516,8 +539,8 @@ du secteur public au privé.">
                 <a class="footer-menu__list-link nav-link" href="/credits" title="Crédits">Crédits</a>
               </li>
             </ul>
-          </nav>   
-        </div>     
+          </nav>
+        </div>
       </footer>
       <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
