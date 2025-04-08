@@ -38,7 +38,7 @@
     flex: grow;
 }
 
-.main-menu__nav-link {
+.nav-link {
     position: relative;
     padding: 0.5rem 1rem;
     color: #333;
@@ -47,7 +47,7 @@
     transition: color 0.2s ease;
 }
 
-.main-menu__nav-link:after {
+.nav-link:after {
     display: block;
     content: "";
     margin-top: 6px;
@@ -57,11 +57,11 @@
     transition: .25s;
 }
 
-.main-menu__nav-link:hover:after, .main-menu__nav-link:focus:after {
+.nav-link:hover:after, .nav-link:focus:after {
     width: 100%;
 }
 
-.main-menu__nav-link:focus {
+.nav-link:focus {
     outline: 2px solid #860707;
     outline-offset: 2px;
     border-radius: 4px;

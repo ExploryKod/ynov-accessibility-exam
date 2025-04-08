@@ -99,22 +99,22 @@ du secteur public au privé.">
         <nav class="main-menu" aria-label="Menu principale">
           <ul class="main-menu__nav">
             <li class="main-menu__nav-item">
-              <a class="main-menu__nav-link main-menu__nav-link--positioned" href="/">Le lieu</a>
+              <a class="nav-link main-menu__nav-link--positioned" href="/">Le lieu</a>
             </li>
             <li class="main-menu__nav-item">
-              <a class="main-menu__nav-link" href="/#localisation">La localisation</a>
+              <a class="nav-link" href="/#localisation">La localisation</a>
             </li>
             <li class="main-menu__nav-item">
-              <a class="main-menu__nav-link" href="/#services">Les services</a>
+              <a class="nav-link" href="/#services">Les services</a>
             </li>
             <li class="main-menu__nav-item">
-              <a class="main-menu__nav-link" href="/#histoire">La création</a>
+              <a class="nav-link" href="/#histoire">La création</a>
             </li>
             <li class="main-menu__nav-item">
-              <a class="main-menu__nav-link" href="/#galerie">La gallerie</a>
+              <a class="nav-link" href="/#galerie">La gallerie</a>
             </li>
             <li class="main-menu__nav-item">
-                <a class="main-menu__nav-link" href="/#contact">Contactez-nous</a>
+                <a class="nav-link" href="/#contact">Contactez-nous</a>
             </li>
           </ul>
         </nav>
@@ -426,7 +426,7 @@ du secteur public au privé.">
             <div class="form-wrapper">
               <form id="contact-form" class="contact-form" novalidate>
                 <div class="field">
-                  <label for="nom">Nom <span class="required" aria-hidden="true">*</span></label>
+                  <label for="nom">Nom <span class="required" aria-hidden="true"> (Obligatoire)</span></label>
                   <input type="text" id="nom" name="nom" required autocomplete="name" />
                 </div>
             
@@ -436,7 +436,7 @@ du secteur public au privé.">
                 </div>
             
                 <div class="field">
-                  <label for="email">Email <span class="required" aria-hidden="true">*</span></label>
+                  <label for="email">Email <span class="required" aria-hidden="true"> (Obligatoire)</span></label>
                   <input type="email" id="email" name="email" required autocomplete="email" />
                 </div>
             
@@ -446,7 +446,7 @@ du secteur public au privé.">
                 </div>
             
                 <div class="field">
-                  <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+                  <label for="message">Message <span class="required" aria-hidden="true"> (Obligatoire)</span></label>
                   <textarea id="message" name="message" required></textarea>
                 </div>
             
@@ -457,16 +457,22 @@ du secteur public au privé.">
             
                 <div class="field privacy-notice">
                   <p>
-                    Les données personnelles transmises via le présent formulaire sont collectées par Covivio afin de répondre à votre demande, et si vous l'acceptez, afin de recevoir nos newsletters. Vous disposez d'un droit d'accès, de rectification, de portabilité, d'effacement et de retrait de votre consentement. Plus d'informations dans <a href="/politique-de-confidentialite">notre politique de confidentialité</a>.
+                    Les données personnelles transmises via le présent formulaire sont collectées par Covivio
+                     afin de répondre à votre demande, et si vous l'acceptez, afin de recevoir nos newsletters. 
+                     Vous disposez d'un droit d'accès, de rectification, de portabilité, d'effacement et de retrait de votre consentement. 
+                     Plus d'informations dans <a href="/politique-de-confidentialite">notre politique de confidentialité</a>.
                   </p>
+                  <p>Ce traitement a pour but de nous permettre de répondre à votre demande d’information. Après validation du formulaire, 
+                    les données recueillies sont transmises sur une adresse email interne. La personne qui a accès à cette demande 
+                    la redirige alors manuellement vers le service concerné. Nous supprimons les données que vous nous avez 
+                    transmises 6 mois après la clôture de votre demande.</p>
                 </div>
-            
-                <p class="required-info">*champs obligatoires</p>
             
                 <div class="form-button-wrapper">
                   <button type="submit">Confirmer</button>
                 </div>
               </form>
+             
             </div>
             
           </div>
@@ -482,10 +488,10 @@ du secteur public au privé.">
                 <a href="https://www.covivio.eu/fr/" target="_blank">Covivio</a> 
                 devient propriétaire de 75% des surfaces du site.</p>
               <p class="text-lg">Fort de son histoire partenariale, de ses expertises immobilières et de sa culture européenne, 
-                <a href="https://www.covivio.eu/" target="_blank">Covivio</a> invente l’expérience utilisateur d’aujourd’hui et dessine la ville de demain. 
-                Acteur immobilier de préférence à l’échelle européenne, <a href="https://www.covivio.eu/" target="_blank">Covivio</a> 
+                <strong>Covivio</strong> invente l’expérience utilisateur d’aujourd’hui et dessine la ville de demain. 
+                Acteur immobilier de préférence à l’échelle européenne, <strong>Covivio</strong>
                 se rapproche des utilisateurs finaux, capte leurs aspirations, conjugue travailler, voyager, habiter, et coinvente des espaces vivants.</p>
-              <p class="text-lg">Opérateur européen de référence avec plus de 24,8 Md€ de patrimoine <a href="https://www.covivio.eu/">Covivio</a> 
+              <p class="text-lg">Opérateur européen de référence avec plus de 24,8 Md€ de patrimoine <strong>Covivio</strong>
                 accompagne les entreprises, les marques hôtelières et les territoires dans leurs enjeux d’attractivité, de transformation et de performance responsable.</p>
             </div>
           </div>
@@ -498,16 +504,16 @@ du secteur public au privé.">
           <nav class="footer-menu" aria-label="Menu du footer">
             <ul class="footer-menu__list">
               <li class="footer-menu__list-item">
-                <a class="footer-menu__list-link footer-menu__nav-link--positioned" href="/mentions-legales" title="Mentions légales">Mentions légales</a>
+                <a class="footer-menu__list-link footer-menu__nav-link--positioned nav-link" href="/mentions-legales" title="Mentions légales">Mentions légales</a>
               </li>
               <li class="footer-menu__list-item">
-                <a class="footer-menu__list-link" href="/politique-de-confidentialite" title="Politique de confidentialité">Politique de confidentialité</a>
+                <a class="footer-menu__list-link nav-link" href="/politique-de-confidentialite" title="Politique de confidentialité">Politique de confidentialité</a>
               </li>
               <li class="footer-menu__list-item">
-                <a class="footer-menu__list-link" href="/contact" title="Contactez-nous">Contact</a>
+                <a class="footer-menu__list-link nav-link" href="/contact" title="Contactez-nous">Contact</a>
               </li>
               <li class="footer-menu__list-item">
-                <a class="footer-menu__list-link" href="/credits" title="Crédits">Crédits</a>
+                <a class="footer-menu__list-link nav-link" href="/credits" title="Crédits">Crédits</a>
               </li>
             </ul>
           </nav>   

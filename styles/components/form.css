@@ -97,6 +97,9 @@
     font-size: 0.9rem;
     line-height: 1.5;
     color: #555;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   
   .privacy-notice a {
@@ -131,4 +134,8 @@
   .contact-form .form-button-wrapper button:hover, .contact-form .form-button-wrapper button:focus {
     background-color: #272727;
     color: #fff;
+  }
+
+  .required-info span {
+    color: #d60000;
   }
