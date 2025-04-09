@@ -53,6 +53,12 @@
     flex-direction: column;
 }
 
+.text-image .text-container .text-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 545px;
+}
+
 .text-image .text-container .paragraph-container {
     display: flex;
     flex-direction: column;

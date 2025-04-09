@@ -27,7 +27,14 @@ body .covivio-section .section-content, body .contact-section .section-content {
     padding: 100px 121px;
     display: flex;
     flex-direction: column;
+}
+
+body .contact-section .section-content {
     gap: 20px; 
+}
+
+body .covivio-section .section-content {
+    gap: 34px;
 }
 
 body .covivio-section .logo-container {
