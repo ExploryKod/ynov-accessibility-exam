@@ -4,21 +4,23 @@ body .section {
     margin: 0 auto;
 }
 
-body .section--grey {
+body .bg-grey {
     background-color: var(--cite-grey);
 }
 
-body .section--yellow {
+body .bg-yellow {
     background-color: var(--cite-yellow);
+}
+
+
+body .bg-grey-90 {
+    background-color: var(--cite-grey-90);
 }
 
 body .coworking-section {
     display: none;
 }
 
-body .bg-grey-90 {
-    background-color: var(--cite-grey-90);
-}
 
 /* Covivio and form section specific style */
 body .covivio-section .section-content, body .contact-section .section-content {
