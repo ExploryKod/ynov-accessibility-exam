@@ -37,13 +37,15 @@
 }
 
 .text-image .image-container {
-    overflow: hidden;
+    max-height: 651px;
+    overflow: hidden;  
 }
 
 .text-image .image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 .text-image .text-container {
@@ -70,6 +72,13 @@
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.text-image .sub-description .sub-description__group {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
 }
 
 .text-image .sub-description.columns {
