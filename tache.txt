@@ -2,3 +2,9 @@
 - Problème des aria manquants
 - Carrousel
 - tailles des textes ?
+- overlay: pas de before
+- dd dt
+- focus
+- pbm du iframe : ajouter le title via le JS car inaccessible. 
+Comment proposer une alternative au iframe dans ce cas ? (video inaccessible en interne: c forcémenr embed)
+- description images des carousels à faire

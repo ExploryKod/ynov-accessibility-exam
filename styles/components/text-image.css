@@ -191,7 +191,7 @@
     border-bottom: 1px dotted currentColor;
 }
 
-.text-image abbr:hover {
+.text-image abbr:hover, .text-image abbr:focus {
     cursor: help;
 }
 
