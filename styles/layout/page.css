@@ -32,6 +32,7 @@ body .bg-grey-90 {
     background-color: var(--cite-grey-90);
 }
 
+
 /* Covivio and form section specific style */
 body .covivio-section .section-content, body .contact-section .section-content {
     padding: 100px 121px;

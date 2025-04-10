@@ -444,22 +444,22 @@ du secteur public au privé.">
           </div>
         </section>
         
-        <section class="section video-section bg-grey">
-          <div class="video-wrapper">
-              <a role="button" aria-label="Ouvrir la vidéo youtube : notre développement au sein de Bordeaux." 
-              data-fancybox="video-gallery" 
-              href="https://www.youtube.com/embed/6iqEX_pGtrw?si=REMBFsEqc2DP4o4j">
-                
-                  <img class="card-img-top img-fluid" src="./ressources/video-image.jpg" 
-                  alt="Une femme marche dans l'allée piétonne de la cité numérique. 
-                  Il y a un sous-titrage qui dit 'on se développe, on innove, on se transforme'."/>
-                  <span class="play-icon" aria-label="Play">&#9658;</span> 
-                
-              </a>
-          </div>
-        </section>
-     
-
+            <section class="section video-section bg-grey">
+              <div class="video">
+                <div class="video-container">
+                  <div class="poster-container" role="button" tabindex="0" aria-label="Play youtube video: Bordeaux Métropole, unissons nos énergies" onkeydown="handleKeyDown(event)" onclick="playVideo()">
+                    <img class="poster-image" src="./ressources/video-image.jpg" alt="Poster image for the video about Bordeaux Métropole"/>
+                    <span class="play-icon" aria-hidden="true">&#9658;</span>
+                  </div>
+                  <iframe class="bordeaux-iframe" id="bordeaux-iframe"
+                          src="https://www.youtube.com/embed/6iqEX_pGtrw?si=Y6nTPJv0of1fJTQ5"
+                          title="YouTube video player: Bordeaux Métropole, unissons nos énergies." frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </section>
+            
         <section class="contact-section section bg-yellow" id="contact">
           <div class="section-content">
             <div class="text-container">
@@ -567,6 +567,7 @@ du secteur public au privé.">
       <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.umd.js"></script>
       <script src="./js/form.js"></script>
+      <script src="./js/iframe.js"></script>
       <script>
         document.addEventListener("DOMContentLoaded", function () {
           const covivioCarouselEl = document.getElementById("covivio-carousel");
