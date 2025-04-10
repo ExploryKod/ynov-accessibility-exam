@@ -4,6 +4,21 @@ body .section {
     margin: 0 auto;
 }
 
+/* Lien d'évitement pour permettre d'éviter le header pour les utilisateur qui naviguent via le clavier */
+body a.skip {
+    display: inline-block;
+    color: #555;
+    background: #fff;
+    padding: .5em ;
+    position: absolute ;
+    left: -99999rem ;
+    z-index: 100 ;
+}
+
+body a.skip:focus {
+    left: 0;
+}
+
 body .bg-grey {
     background-color: var(--cite-grey);
 }
