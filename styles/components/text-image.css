@@ -207,6 +207,13 @@
     border: 0;
 }
 
+.text-image .cta-links {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 30px;
+}
+
 @media screen and (max-width: 992px) {
     .text-image, .text-image.inverse {
         padding: 2rem 1rem;

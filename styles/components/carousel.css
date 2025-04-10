@@ -1,16 +1,26 @@
 /* Fancybox Carousel */
+.carrousel-wrapper {
 
-#covivio-carousel {
-    --f-carousel-slide-height: 60%;
-    --f-carousel-spacing: 10px;
-  
-    height: 200px;
-    max-width: 640px;
-    margin: 0 auto;
 }
 
-#covivio-Carousel .f-carousel__slide {
+.carrousel-wrapper .f-carousel {
+    --f-carousel-slide-height: 100%;
+    --f-carousel-spacing: 10px;
+
+    height: 545px;
+    max-width: 640px;
+    margin: 0 auto;
+  
+
+}
+
+
+.carrousel-wrapper .f-carousel .f-carousel__slide {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.carrousel-wrapper .f-carousel .f-carousel__slide.is-selected  img {
+    height: 498px;
 }
