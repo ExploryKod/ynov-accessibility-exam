@@ -50,6 +50,10 @@ body p, body a, body li {
     text-transform: uppercase;
 }
 
+.co-working-subtitle {
+    margin: 30px 0;
+}
+
 /* Generic class for texts */
 
 .text-lg {
@@ -89,6 +93,7 @@ body p, body a, body li {
     visibility: hidden;
 }
 
+/* Links */
 .cite-link {
     font-family: 'Freight Sans Pro';
     padding: 0.5em 2em;

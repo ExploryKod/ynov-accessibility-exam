@@ -1,8 +1,4 @@
-/* Fancybox Carousel */
-.carrousel-wrapper {
-
-}
-
+/* Fancybox first Carousel */
 .carrousel-wrapper .f-carousel {
     --f-carousel-slide-height: 100%;
     --f-carousel-spacing: 10px;
@@ -10,8 +6,6 @@
     height: 545px;
     max-width: 640px;
     margin: 0 auto;
-  
-
 }
 
 
@@ -23,4 +17,47 @@
 
 .carrousel-wrapper .f-carousel .f-carousel__slide.is-selected  img {
     height: 498px;
+}
+
+/* Fancybox second carousel */
+.grid-images {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 121px;
+    position: relative;
+}
+
+.grid-images .grid-carousel {
+    --f-carousel-spacing: 90px;
+    --f-carousel-slide-width: calc((100% - 16px) / 5);
+
+    --f-button-width: 38px;
+    --f-button-height: 38px;
+  
+    --f-button-svg-width: 16px;
+    --f-button-svg-height: 16px;
+    --f-button-svg-stroke-width: 2.5;
+  
+    --f-button-color: rgb(71 85 105);
+    --f-button-border-radius: 50%;
+    --f-button-shadow: 0 6px 12px -2px rgb(50 50 93 / 25%), 0 3px 7px -3px rgb(0 0
+            0 / 30%);
+  
+    --f-button-bg: #fff;
+    --f-button-hover-bg: #f9f9f9;
+    --f-button-active-bg: #f0f0f0;
+
+    overflow: hidden;
+}
+
+.grid-images .grid-carousel .f-carousel__slide {
+    width: calc(100% / 5);
+}
+
+.grid-images .grid-carousel .f-carousel__slide img {
+    object-fit: cover;
+    aspect-ratio: 1;
+    max-width: 300px;
+    width: 300px;
+    height: 300px;
 }
