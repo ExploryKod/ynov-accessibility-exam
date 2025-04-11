@@ -57,8 +57,15 @@ du secteur public au privé.">
   <a class="skip" href="#content">Aller directement au contenu</a>
     <header class="site-header" role="banner">
       <div class="site-header__content">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
+        <input id="menu__toggle" type="checkbox"  aria-controls="main-menu" aria-expanded="false" />
+        <label 
+        class="menu__btn" 
+        for="menu__toggle"
+        aria-controls="main-menu"
+        aria-expanded="false"
+        role="button"
+        tabindex="0"
+        >
           <span></span>
         </label>
         <div class="logo">
