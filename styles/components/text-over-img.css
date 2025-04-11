@@ -121,3 +121,14 @@
     }
 }
 
+
+@media (max-width: 625px) {
+    .text-over-img .section__title {
+        font-size: 1.5rem;
+    }
+
+    .text-over-img .section__cta {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
