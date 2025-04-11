@@ -1,9 +1,17 @@
 .video {
     display: flex;
     flex-direction: column;
-    gap: 34px;
-    padding: 70px 121px;
+    gap: 20px;
+    padding: 30px 5px;
     position: relative;
+}
+
+@media  screen and (min-width: 992px) {
+    .video {
+      padding: 70px 121px;
+      position: relative;
+      gap: 34px;
+  }         
 }
 
 .video-container {

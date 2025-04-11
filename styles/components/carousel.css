@@ -23,13 +23,11 @@
 .grid-images {
     display: flex;
     flex-direction: column;
-    padding: 70px 121px;
+    padding: 30px 5px;
     position: relative;
 }
 
 .grid-images .grid-carousel {
-    --f-carousel-spacing: 90px;
-    --f-carousel-slide-width: calc((100% - 16px) / 5);
 
     --f-button-width: 38px;
     --f-button-height: 38px;
@@ -50,9 +48,59 @@
     overflow: hidden;
 }
 
-.grid-images .grid-carousel .f-carousel__slide {
-    width: calc(100% / 5);
+@media  screen and (max-width: 992px) {
+
+    .grid-images .grid-carousel {
+        --f-carousel-spacing: 20px;
+        --f-carousel-slide-width: calc((100% - 16px) / 1);
+    }
+    
+    .grid-images .grid-carousel .f-carousel__slide {
+        width: 300px;
+    }         
 }
+
+@media  screen and (min-width: 992x) {
+
+    .grid-images {
+        padding: 70px 121px;
+    }
+
+    .grid-images .grid-carousel {
+        --f-carousel-spacing: 30px;
+        --f-carousel-slide-width: calc((100% - 16px) / 2);
+    }
+
+    .grid-images .grid-carousel .f-carousel__slide {
+        width: calc(100% / 2);
+    }   
+}
+
+@media  screen and (min-width: 1024px) {
+
+    .grid-images .grid-carousel {
+        --f-carousel-spacing: 50px;
+        --f-carousel-slide-width: calc((100% - 16px) / 3);
+    }
+
+    .grid-images .grid-carousel .f-carousel__slide {
+        width: calc(100% / 3);
+    }   
+}
+
+
+@media  screen and (min-width: 1300px) {
+
+    .grid-images .grid-carousel {
+        --f-carousel-spacing: 90px;
+        --f-carousel-slide-width: calc((100% - 16px) / 5);
+    }
+
+    .grid-images .grid-carousel .f-carousel__slide {
+        width: calc(100% / 5);
+    }   
+}
+
 
 .grid-images .grid-carousel .f-carousel__slide img {
     object-fit: cover;
