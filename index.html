@@ -446,6 +446,28 @@ du secteur public au privé.">
            <!-- Accessibilité : cette vidéo est affiché via un iframe car je n'ai pas d'autres solutions -->
             <section class="section video-section bg-grey">
               <div class="video">
+
+                <div class="transcript-section">
+                  <button class="text-lg text-bold" aria-expanded="false" aria-controls="transcript-content" onclick="toggleTranscript()">
+                    Afficher la transcription
+                  </button>
+                  <div id="transcript-content" class="transcript-content" hidden aria-hidden="true">
+                    <h2>Transcription de la vidéo</h2>
+                    <p>La place de la Bourse, non mais attendez...</p>
+                    <p>Sérieusement, mais Bordeaux Métropole, c'est tellement plus que des symboles. Ce sont des actes pour créer une métropole zéro carbone et productrice d'énergie renouvelable.</p>
+                    <p>On respire, on se développe, on innove, on se transforme avec les transitions au cœur de la stratégie de développement du territoire. C'est que le début. Bref, on peut dire qu'ici, le mouvement est partout.</p>
+                    <p>[Musique]</p>
+                    <p>Sur l'eau comme dans les airs, on s'adapte tout le temps et je dirais même qu'on est en train d'avancer notre objectif : devenir une métropole à énergie positive. On est déjà engagé, ville climatiquement neutre, mais surtout, on invente tous ensemble l'économie de demain. C'est le Médine Bordeaux.</p>
+                    <p>[Musique]</p>
+                    <p>Bordeaux Métropole imagine les conditions pour que les entreprises rayonnent et que de nouvelles grandissent. Ça pousse bien en fait. On arrive à tout connecter et à tous se connecter. En un mot, on est ouvert, ouvert sur le monde virtuel et sur le monde réel, pour que l'innovation serve au plus grand nombre.</p>
+                    <p>C'est pour ça qu'on investit dans des projets qui changent la vie de tous, même si c'est un peu pointu. Non, non, ça va. Chez nous, l'économie est passionnée, intense, collective. Et dans chaque domaine, on cesse de réinventer parce qu'on a depuis toujours la tête dans les étoiles.</p>
+                    <p>Une chose est sûre : ici, tout est possible.</p>
+                    <p>[Musique]</p>
+                    <p>Bordeaux Métropole, unissons nos énergies.</p>
+                    <p>[Musique]</p>
+                  </div>
+                </div>
+
                 <div class="video-container">
                   <div class="poster-container" role="button" tabindex="0" aria-label="Play youtube video: Bordeaux Métropole, unissons nos énergies" onkeydown="handleKeyDown(event)" onclick="playVideo()">
                     <img class="poster-image" src="./ressources/video-image.jpg" alt="Poster image for the video about Bordeaux Métropole"/>
@@ -457,6 +479,9 @@ du secteur public au privé.">
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
+
+
+              
               </div>
             </section>
             

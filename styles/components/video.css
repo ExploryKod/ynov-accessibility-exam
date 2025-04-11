@@ -1,5 +1,6 @@
 .video {
     display: flex;
+    flex-direction: column;
     gap: 34px;
     padding: 70px 121px;
     position: relative;
@@ -10,6 +11,8 @@
     overflow: hidden;
     width: 100%;
     padding-top: 56.25%; /* 16:9 Aspect Ratio */
+
+
   }
   
   .bordeaux-iframe {
@@ -49,45 +52,49 @@
   }
   
   .play-icon {
-    z-index: 110;
-    font-size: 4rem;
-    color: white;
-    pointer-events: none; /* Ensures the icon doesn't interfere with clicking the container */
-  }
-  
-
-
-
-
-  
-  
-
-/* Avec FancyBox */
-.video a {
-    position: relative;
-    display: inline-block;
-    outline: none; 
-}
-
-.video a:focus {
-    outline: 2px solid #005ea2;
-    outline-offset: 2px;
-}
-
-.video a img {
-    object-fit: cover;
-    width: 100%;
-    max-width: 100%;
-    display: block;
-}
-
-.play-icon {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 4rem; 
-    color: white; 
-    padding: 0.5rem; 
-    pointer-events: none; 
-}
+    transform: translate(-50%, 50%);
+    z-index: 110;
+    font-size: 4rem;
+    color: white;
+    pointer-events: none;
+  }
+  
+  /* Style de la partie transcription */
+  .transcript-section {
+    margin-top: 20px;
+  }
+  
+  .transcript-content {
+    margin-top: 10px;
+  }
+
+  /* bouton de transcription */
+
+  .transcript-section button {
+    background-color: var(--cite-yellow);
+    color: var(--cite-black);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .transcript-section button:hover {
+    background-color: var(--cite-black);
+    color: #fff;
+  }
+  
+  .transcript-section button:focus {
+    outline: 2px solid var(--cite-black);
+    outline-offset: 2px;
+  }
+  
+  .transcript-section button:active {
+    background-color: var(--cite-black);
+    color: #fff;
+  }
+  
