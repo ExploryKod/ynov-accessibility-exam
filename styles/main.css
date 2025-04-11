@@ -4,6 +4,7 @@
 @import './fonts/font.css';
 
 /* Base styles */
+@import './base/base.css';
 @import './base/typography.css';
 
 /* Layout styles */
