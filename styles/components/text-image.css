@@ -253,7 +253,7 @@
         padding: 50px 60px;
         gap: 25px;
     }
-    
+
     .text-image .sub-description {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -261,6 +261,13 @@
     .text-image.overflow-effect > div:nth-of-type(2) {
         max-width: 300px;
     }
+}
+
+@media screen and (max-width: 1024px) {
+    .text-image .image-container {
+        max-height: 100%;
+        overflow: hidden;  
+    }    
 }
 
 
