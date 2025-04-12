@@ -139,3 +139,29 @@
   .required-info span {
     color: #d60000;
   }
+
+  button[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  /* Message erreur ou success de validation personnalisés et simulés */
+  .form-message {
+    display: none;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-message.success {
+    background-color: #e6f4ea;
+    color: #084c2e;
+    border: 1px solid #b7dfc3;
+  }
+
+  .form-message.error {
+    background-color: #fbe9eb;
+    color: #5b0a13;
+    border: 1px solid #e8b2b9;
+  }

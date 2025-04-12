@@ -1,5 +1,6 @@
 
   const form = document.getElementById('contact-form');
+  const messageContainer = document.getElementById('form-message');
 
   const validation = new JustValidate('#contact-form', {
     errorLabelStyle: {
@@ -24,7 +25,7 @@
       },
       {
         rule: 'email',
-        errorMessage: 'Adresse email invalide',
+        errorMessage: 'Adresse email invalide, la bonne forme est par exemple: nom@gmail.com',
       },
     ])
     .addField('#message', [
@@ -34,29 +35,29 @@
       },
     ])
     .onSuccess(async (event) => {
-      event.preventDefault(); 
-
-      const formData = new FormData(form);
-
+      event.preventDefault();
+      messageContainer.className = 'form-message';
+      messageContainer.style.display = 'block';
+      messageContainer.textContent = '⏳ Message en cours d’envoi...';
+    
+      const submitButton = form.querySelector('button[type="submit"]');
+      submitButton.disabled = true;
+    
       try {
-        const response = await fetch('/form.php', {
-          method: 'POST',
-          body: formData,
-          headers: {
-            'Accept': 'application/json',
-          },
-        });
-
-        const result = await response.json();
-
-        if (response.ok) {
-          alert('Merci pour votre message !');
-          form.reset();
-        } else {
-          alert(result.error || 'Une erreur est survenue.');
-        }
+        // Simule un appel serveur
+        await new Promise(resolve => setTimeout(resolve, 1000));
+    
+        // Succès
+        messageContainer.textContent = '✅ Merci pour votre message ! Nous vous répondrons rapidement.';
+        messageContainer.classList.add('success');
+        submitButton.disabled = false;
+        form.reset();
       } catch (error) {
-        alert('Erreur de communication avec le serveur.');
+        messageContainer.textContent = '❌ Une erreur est survenue lors de l’envoi.';
+        messageContainer.classList.add('error');
+        submitButton.disabled = false;
         console.error(error);
       }
-    });
+      
+      });
+    

@@ -500,6 +500,7 @@ du secteur public au privé.">
               <p>Veuillez remplir le Formulaire ci-dessous&nbsp;:</p>
             </div>
             <div class="form-wrapper">
+            
               <form id="contact-form" class="contact-form" novalidate>
                 <div class="field">
                   <label for="nom">Prénom et nom <span class="required" aria-hidden="true"> (Obligatoire)</span></label>
@@ -513,7 +514,7 @@ du secteur public au privé.">
 
                 <div class="field">
                   <label for="email">Email <span class="required" aria-hidden="true"> (Obligatoire)</span></label>
-                  <input type="email" id="email" name="email" required autocomplete="email" />
+                  <input placeholder="prenom.nom@mail.com"  type="email" id="email" name="email" required autocomplete="email" />
                 </div>
 
                 <div class="field">
@@ -543,6 +544,8 @@ du secteur public au privé.">
                     la redirige alors manuellement vers le service concerné. Nous supprimons les données que vous nous avez
                     transmises 6 mois après la clôture de votre demande.</p>
                 </div>
+
+                <div id="form-message" class="form-message" aria-live="polite"></div>
 
                 <div class="form-button-wrapper">
                   <button type="submit">Envoyer un email</button>
