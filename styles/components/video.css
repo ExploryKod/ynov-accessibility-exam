@@ -70,14 +70,6 @@
     pointer-events: none;
   }
   
-  /* Style de la partie transcription */
-  .transcript-section {
-    margin-top: 20px;
-  }
-  
-  .transcript-content {
-    margin-top: 10px;
-  }
 
   /* bouton de transcription */
 
@@ -95,8 +87,17 @@
     background-color: var(--cite-black);
     color: #fff;
   }
+
+  button[aria-expanded="true"] {
+    background-color: var(--cite-black);
+    color: white;
+  }
+  button[aria-expanded="false"] {
+    background-color: #ccc;
+    color: black;
+  }
   
-  .transcript-section button:focus {
+  .transcript-section button:focus, button[aria-expanded="false"]:focus, button[aria-expanded="true"]:focus  {
     outline: 2px solid var(--cite-black);
     outline-offset: 2px;
   }
@@ -106,3 +107,96 @@
     color: #fff;
   }
   
+
+ /* Style de la partie transcription */
+.transcript-section {
+  margin-top: 20px;
+}
+
+.transcript-content {
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.transcript-content p {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+}
+
+.transcript-section {
+  margin-top: 20px;
+}
+
+.transcript-content {
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.transcript-content p {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+}
+
+.transcript-section button {
+  background-color: var(--cite-black);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.transcript-section button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+button[aria-expanded="true"] {
+  background-color: #333;
+  color: #fff;
+}
+
+button[aria-expanded="false"] {
+  background-color: var(--cite-yellow);
+  color: var(--cite-black);
+}
+
+.transcript-section button:focus, 
+button[aria-expanded="false"]:focus, 
+button[aria-expanded="true"]:focus {
+  outline: 3px solid #333;
+  outline-offset: 3px;
+}
+
+.transcript-section button:active {
+  background-color: var(--cite-black);
+  color: #fff;
+}
+
+.transcript-section {
+  margin-bottom: 1rem;
+}
+
+.transcript-content {
+  margin-bottom: 20px;
+}
+
+.transcript-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}

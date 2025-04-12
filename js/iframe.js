@@ -16,24 +16,24 @@ function playVideo() {
     }
   }
   
-  /* Pour les utilisateur pour qui la vidéo ne peux être lu, il y a cette alternative : la transcription */
   function toggleTranscript() {
-  const transcriptContent = document.getElementById('transcript-content');
-  const button = document.querySelector('.transcript-section button');
-  const isExpanded = button.getAttribute('aria-expanded') === 'true';
-
-  // Toggle the visibility and aria-hidden attribute
-  transcriptContent.hidden = !isExpanded;
-  transcriptContent.setAttribute('aria-hidden', (!isExpanded).toString());
-
-  // Toggle the aria-expanded attribute
-  button.setAttribute('aria-expanded', (!isExpanded).toString());
-
-  // Update the button text
-  if (isExpanded) {
-    button.textContent = 'Fermer la transcription';
-  } else {
-    button.textContent = 'Afficher la transcription';
+    const transcriptContent = document.getElementById('transcript-content');
+    const button = document.querySelector('.transcript-section button');
+  
+    // Récupère l'état actuel de aria-expanded
+    const isExpanded = button.getAttribute('aria-expanded') === 'true';
+  
+    // Toggle the visibility of the transcript content
+    if (isExpanded) {
+      transcriptContent.hidden = true;
+      transcriptContent.setAttribute('aria-hidden', 'true');
+      button.setAttribute('aria-expanded', 'false');
+      button.textContent = 'Afficher la transcription';
+    } else {
+      transcriptContent.hidden = false;
+      transcriptContent.setAttribute('aria-hidden', 'false');
+      button.setAttribute('aria-expanded', 'true');
+      button.textContent = 'Fermer la transcription';
+    }
   }
-}
-
+  
