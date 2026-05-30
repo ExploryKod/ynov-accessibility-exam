@@ -108,7 +108,7 @@ du secteur public au privé.">
             <div class="text-container">
               <div>
                 <h1 class="presentation-section section__title">La Cité Numérique, le coeur de l'économie numérique de la Nouvelle Aquitaine</h1>
-                <a href="#lieu" class="section__cta text-uppercase">Découvrez la cité numérique</a>
+                <a href="#lieu" class="section__cta hero-cta text-uppercase">Découvrez la cité numérique</a>
               </div>
             </div>
           </div>
@@ -229,36 +229,37 @@ du secteur public au privé.">
         <section class="coworking-section section" id="services">
           <div class="text-image inverse">
             <div class="image-container">
-              <div class="carrousel-wrapper">
-              <div class="f-carousel" id="covivio-carousel">
-                <div class="f-carousel__slide" data-thumb-src="./ressources/carousel/first/001.jpg">
-                  <img width="640" height="480" alt="" data-lazy-src="./ressources/carousel/first/001.jpg" />
+              <div class="carrousel-wrapper" role="region" aria-roledescription="carousel" aria-label="Galerie photos Wellio by Covivio">
+                <button type="button" class="carousel-pause-btn" id="covivio-carousel-pause" aria-pressed="false" aria-label="Mettre en pause le défilement automatique">Pause</button>
+                <div class="f-carousel" id="covivio-carousel" aria-live="off">
+                  <div class="f-carousel__slide" data-thumb-src="./ressources/carousel/first/001.jpg">
+                    <img width="640" height="480" alt="Espace de coworking avec bureaux partagés et plantes vertes." data-lazy-src="./ressources/carousel/first/001.jpg" />
+                  </div>
+                  <div class="f-carousel__slide" data-thumb-src="./ressources/carousel/first/002.jpg">
+                    <img width="640" height="480" alt="Salle de travail ouverte et lumineuse avec postes individuels." data-lazy-src="./ressources/carousel/first/002.jpg" />
+                  </div>
+                  <div class="f-carousel__slide" data-thumb-src="./ressources/carousel/first/003.jpg">
+                    <img width="640" height="480" alt="Zone de détente avec canapés dans un espace professionnel." data-lazy-src="./ressources/carousel/first/003.jpg" />
+                  </div>
+                  <div class="f-carousel__slide" data-thumb-src="./ressources/carousel/first/004.jpg">
+                    <img width="640" height="480" alt="Open space moderne avec mobilier design et éclairage naturel." data-lazy-src="./ressources/carousel/first/004.jpg" />
+                  </div>
+                  <div class="f-carousel__slide" data-thumb-src="./ressources/carousel/first/005.jpg">
+                    <img width="640" height="480" alt="Espace de travail collaboratif avec grandes fenêtres." data-lazy-src="./ressources/carousel/first/005.jpg" />
+                  </div>
+                  <div class="f-carousel__slide" data-thumb-src="./ressources/carousel/first/006.jpg">
+                    <img width="640" height="480" alt="Bureau privé équipé dans un cadre contemporain." data-lazy-src="./ressources/carousel/first/006.jpg" />
+                  </div>
+                  <div class="f-carousel__slide" data-thumb-src="./ressources/carousel/first/007.jpg">
+                    <img width="640" height="480" alt="Hall d'accueil d'un espace de coworking Wellio." data-lazy-src="./ressources/carousel/first/007.jpg" />
+                  </div>
+                  <div class="f-carousel__slide" data-thumb-src="./ressources/carousel/first/008.jpg">
+                    <img width="640" height="480" alt="Salle de réunion avec table et chaises dans un espace Wellio." data-lazy-src="./ressources/carousel/first/008.jpg" />
+                  </div>
+                  <div class="f-carousel__slide" data-thumb-src="./ressources/carousel/first/009.jpg">
+                    <img width="640" height="480" alt="Vue d'un espace professionnel Wellio by Covivio." data-lazy-src="./ressources/carousel/first/009.jpg" />
+                  </div>
                 </div>
-                <div class="f-carousel__slide" data-thumb-src="./ressources/carousel/first/002.jpg">
-                  <img width="640" height="480" alt="" data-lazy-src="./ressources/carousel/first/002.jpg" />
-                </div>
-                <div class="f-carousel__slide" data-thumb-src="./ressources/carousel/first/003.jpg">
-                  <img width="640" height="480" alt="" data-lazy-src="./ressources/carousel/first/003.jpg" />
-                </div>
-                <div class="f-carousel__slide" data-thumb-src="./ressources/carousel/first/004.jpg">
-                  <img width="640" height="480" alt="" data-lazy-src="./ressources/carousel/first/004.jpg" />
-                </div>
-                <div class="f-carousel__slide" data-thumb-src="./ressources/carousel/first/005.jpg">
-                  <img width="640" height="480" alt="" data-lazy-src="./ressources/carousel/first/005.jpg" />
-                </div>
-                <div class="f-carousel__slide" data-thumb-src="./ressources/carousel/first/006.jpg">
-                  <img width="640" height="480" alt="" data-lazy-src="./ressources/carousel/first/006.jpg" />
-                </div>
-                <div class="f-carousel__slide" data-thumb-src="./ressources/carousel/first/007.jpg">
-                  <img width="640" height="480" alt="" data-lazy-src="./ressources/carousel/first/007.jpg" />
-                </div>
-                <div class="f-carousel__slide" data-thumb-src="./ressources/carousel/first/008.jpg">
-                  <img width="640" height="480" alt="" data-lazy-src="./ressources/carousel/first/008.jpg" />
-                </div>
-                <div class="f-carousel__slide" data-thumb-src="./ressources/carousel/first/009.jpg">
-                  <img width="640" height="480" alt="" data-lazy-src="./ressources/carousel/first/009.jpg" />
-                </div>      
-              </div>
               </div>
 
             </div>
@@ -377,6 +378,7 @@ du secteur public au privé.">
               <h2 class="title-xl">La Cité en image</h2>
             </div>
               <!-- Carousel Container -->
+            <div role="region" aria-roledescription="carousel" aria-label="Galerie photos La Cité en image">
             <div class="f-carousel grid-carousel" id="grid-carousel">
               <div class="f-carousel__slide" data-thumb-src="./ressources/grid/grid-001.jpg">
                 <a data-fancybox="gallery" href="./ressources/grid/grid-001.jpg">
@@ -448,6 +450,7 @@ du secteur public au privé.">
                   <img alt="Vue de haut d'une table avec six chaises en bois et trés ensoleillé grâce aux grandes fenêtres vitrées." src="./ressources/grid/grid-014.jpg" />
                 </a>
               </div>
+            </div>
             </div>
           </div>
         </section>
@@ -605,40 +608,6 @@ du secteur public au privé.">
       <script src="./js/header.js"></script>
       <script src="./js/form.js"></script>
       <script src="./js/iframe.js"></script>
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          
-          const covivioCarouselEl = document.getElementById("covivio-carousel");
-          const gridCarouselEl = document.getElementById("grid-carousel");
-      
-          const covivioCarousel = new Carousel(covivioCarouselEl, {
-            Dots: false,
-            Thumbs: {
-              type: "classic",
-            },
-          }, { Thumbs });
-      
-          // Simulated autoplay for Covivio carousel
-          setInterval(() => {
-            covivioCarousel.slideNext();
-          }, 3000);
-      
-          const gridCarousel = new Carousel(gridCarouselEl, {
-            Dots: false,
-            slidesPerPage: 5
-          });
-
-          Fancybox.bind('[data-fancybox="gallery"]', {
-            closeClickOutside: true, 
-            keyboard: true,          
-            closeBtn: true          
-            
-          });
-
-          Fancybox.bind('[data-fancybox="video-gallery"]', {
-            
-          });
-        });
-      </script>
+      <script src="./js/carousel.js"></script>
 </body>
 

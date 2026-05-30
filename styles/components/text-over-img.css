@@ -82,16 +82,25 @@
     transition: all 0.3s ease;
 }
   
-/* Focus indicator for keyboard navigation */
-.text-over-img .section__cta:focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 2px;
-}
-  
 .text-over-img .section__cta:hover {
     background-color: #333;
     color: white;
     transform: translateY(-2px);
+}
+
+/* Hero CTA: inset focus ring stays visible over image (outline is clipped by overflow:hidden) */
+.text-over-img .hero-cta:focus,
+.text-over-img .hero-cta:focus-visible,
+.text-over-img .hero-cta:focus:hover,
+.text-over-img .hero-cta:focus-visible:hover {
+    outline: none;
+    background-color: #fff;
+    color: #000;
+    border: 3px solid #860707;
+    box-shadow:
+        inset 0 0 0 2px #fff,
+        inset 0 0 0 4px #860707;
+    transform: none;
 }
 
 /* Keyboard users can skip to main content */

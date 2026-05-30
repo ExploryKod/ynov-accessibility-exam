@@ -1,7 +1,47 @@
 /* Fancybox first Carousel */
+.carrousel-wrapper {
+    position: relative;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.carrousel-wrapper .carousel-pause-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--cite-black);
+    border-radius: 4px;
+    background: var(--cite-yellow);
+    color: var(--cite-black);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.carrousel-wrapper .carousel-pause-btn:hover,
+.carrousel-wrapper .carousel-pause-btn:focus {
+    background: var(--cite-black);
+    color: var(--cite-yellow);
+    outline: 2px solid var(--cite-black);
+    outline-offset: 2px;
+}
+
 .carrousel-wrapper .f-carousel {
     --f-carousel-slide-height: 100%;
     --f-carousel-spacing: 10px;
+
+    --f-button-width: 38px;
+    --f-button-height: 38px;
+    --f-button-svg-width: 16px;
+    --f-button-svg-height: 16px;
+    --f-button-svg-stroke-width: 2.5;
+    --f-button-color: rgb(71 85 105);
+    --f-button-border-radius: 50%;
+    --f-button-shadow: 0 6px 12px -2px rgb(50 50 93 / 25%), 0 3px 7px -3px rgb(0 0 0 / 30%);
+    --f-button-bg: #fff;
+    --f-button-hover-bg: #f9f9f9;
+    --f-button-active-bg: #f0f0f0;
 
     height: 545px;
     max-width: 640px;
