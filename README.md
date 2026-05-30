@@ -3,10 +3,10 @@
 **Consigne :**
 > copier la page d'accueil de <a href="https://www.citenumerique.fr/">ce site</a> et la rendre plus conforme aux règles d'accèssibilité web (RGAA, WCAG, Opquast...).
 
-Sources utilisées pour améliorer la conformité:
-Le référentiel Opquast : [Lien ici](https://checklists.opquast.com/fr/qualite-numerique/)
-Les règles RGAA : [Lien ici](https://accessibilite.numerique.gouv.fr/methode/introduction/)
-Les règles WCAG : [Lien ici](https://www.w3.org/WAI/standards-guidelines/wcag/) 
+Sources utilisées pour améliorer la conformité:<br>
+Le référentiel Opquast : [Lien ici](https://checklists.opquast.com/fr/qualite-numerique/)<br>
+Les règles RGAA : [Lien ici](https://accessibilite.numerique.gouv.fr/methode/introduction/)<br>
+Les règles WCAG : [Lien ici](https://www.w3.org/WAI/standards-guidelines/wcag/)<br>
 
 **Avertissement** : l'exercice date d'un certain temps et le site web initial pourrait s'être rendu conforme. Il pourrait même être plus conforme que ce repository entre-temps. Cela serait un bien et j'en serai ravi tant il est important que les sites web se rendent accessibles. Vous ne pourriez donc plus comparer la différence entre ce repo et l'origine, mais quand même constatez mes compétences sur ce repository. Étant un exercice scolaire, je ne l'ai pas améliorer après l'évaluation et j'aurai je l'espère progresser depuis. Ce repository est donc un témoignage de mon parcours et mon attachement à ce sujet qui faisait partie des points ayant motivé mon entrée dans cette formation.
 
